@@ -3,7 +3,7 @@ import urllib.request
 import time
 
 while True:
-    fp = urllib.request.urlopen("http://server:1234/")
+    fp = urllib.request.urlopen("http://server/")
     encodedContent = fp.read()
     decodedContent = encodedContent.decode("utf8")
     print(decodedContent)
